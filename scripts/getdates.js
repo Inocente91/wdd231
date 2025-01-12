@@ -10,7 +10,6 @@ const lastModifiedDate = document.lastModified;
 // Get the last modified date element and set its content
 document.getElementById('lastModifiedDate').textContent = lastModifiedDate;
 
-
 // Course data
 const courses = [
         {
@@ -111,7 +110,7 @@ function displayCourses(category = 'all') {
             courseButton.classList.add('completed');
         }
 
-        courseButton.innerHTML = `${course.subject} ${course.number}: ${course.title}`;
+        courseButton.innerHTML = `${course.subject} ${course.number}: ${course.title} (Credits: ${course.credits})`;
         courseButton.onclick = () => alert(course.description); // Show description on click
         courseContainer.appendChild(courseButton);
     });
