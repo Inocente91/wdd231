@@ -26,22 +26,38 @@
         </menu>
     </header> 
     <main>
-        <section>
+        <div id="container">
+        <section class="section-1">
             <h2>Course Work</h2>
             <li></li>
             <li></li>
             <li></li>
         </section>
-        <section>
+        <section class="section-2">
             <h2>Tijuana, Mexico</h2>
-            <img class="tijuana" src="images/inocente.jpg" alt="">
+            <img id="tijuana" src="images/tijuana.jpg" alt="Picture of Tijuana, Mexico">
+            <p>Tijuana Baja California, Mexico</p>
         </section>
-        <section>
+        </div>
+        <section id="container-certificate">
             <h2>Web and Computer Programming Certificate</h2>
-            <hr>
-            <button>All</button>
-            <button>CSE</button>
-            <button>WDD</button>
+        <div class="filter-buttons">
+            <button onclick="filterCourses('all')">All</button>
+            <button onclick="filterCourses('CSE')">CSE</button>
+            <button onclick="filterCourses('WDD')">WDD</button>
+          </div>
+          
+          <hr>
+          
+          <div id="courses">
+            <button class="course" data-category="CSE">CSE 110</button>
+            <button class="course" data-category="WDD">WDD 130</button>
+            <button class="course" data-category="CSE">CSE 111</button>
+            <button class="course" data-category="CSE">CSE 210</button>
+            <button class="course" data-category="WDD">WDD 131</button>
+            <button class="course" data-category="WDD">WDD 231</button>
+          </div>              
+              
         </section>
     </main>  
     <footer>

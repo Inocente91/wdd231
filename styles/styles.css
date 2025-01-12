@@ -4,6 +4,10 @@
     font-family: "Montserrat", serif;
 }
 
+body {
+    background: white;
+}
+
 .header {
     background: blue;
     align-items: center;
@@ -21,7 +25,6 @@
 h1 {
     color: white;
     margin: 2rem;
-
 }
 
 menu {
@@ -31,12 +34,20 @@ menu {
     padding: 1rem;
 }
 
+menu :hover {
+    color: #f39c12;
+}
+
 a {
     color: white;
     text-decoration: none;
 }
 
-
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: large;
+}
 
 h2 {
     padding: .5rem;
@@ -45,21 +56,21 @@ h2 {
     text-align: center;
 }
 
-
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background: wheat;
-}
-
 li {
     margin: 1rem;
 }
 
-.tijuana {
+#tijuana {
     width: 15rem;
-    display: flex;
-    padding: 3.5rem;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;    
 }
 
 section {
@@ -67,12 +78,179 @@ section {
     background: white;
     border-radius: .5rem;
     overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-button {
-    background: brown;
-    width: 6.5rem;
-    padding: .5rem;
+
+#container-certificate {
+    height: 200px;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color: #34495e;
     color: white;
-    border-radius: .2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.filter-buttons button:hover {
+    background-color: #f39c12;
+}
+
+#courses {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.course {
+    background: brown;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+button {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: blue;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #container {
+        margin: 1.5rem;
+        grid-template-columns: 1fr; 
+    }
+
+    #container-certificate {
+        margin: 1.5rem;
+        height: auto;
+    }
+
+    .header img {
+        width: 6rem; 
+    }
+
+    p {
+        font-size: large;
+    }
+ 
+
+    .filter-buttons button {
+        padding: 0.4em 0.8em; 
+    }
+
+    #courses {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .course {
+        width: 80%; 
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .header img {
+        width: 5rem;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    menu {
+        flex-direction: column; 
+        padding: 0.5rem;
+    }
+
+    #container {
+        grid-template-columns: 1fr; 
+    }
+
+    section {
+        margin: 2rem 0; 
+    }
+
+    .filter-buttons button {
+        width: 100%; 
+    }
+
+    #courses {
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .course {
+        width: 90%; 
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        padding: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem; 
+    }
+
+    .header {
+        padding: 1rem; 
+    }
+
+    .header img {
+        width: 4rem; 
+    }
+
+    .filter-buttons button {
+        padding: 0.4em 0.6em; 
+    }
+
+    #courses {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .course {
+        width: 100%; 
+        margin-bottom: 0.5rem;
+    }
+
+    footer {
+        padding: 0.8rem; 
+    }
+    p{
+        font-size: smaller;
+    }
+}
+
 
