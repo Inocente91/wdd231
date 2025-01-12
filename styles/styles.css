@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background: blue;
+    background: #0A3981;
     align-items: center;
     display: flex;
     justify-content: center;   
@@ -51,7 +51,7 @@ p {
 
 h2 {
     padding: .5rem;
-    background: blue;
+    background: #0A3981;
     color: white;
     text-align: center;
 }
@@ -88,12 +88,12 @@ li {
 
 
 .course.completed {
-    background: #27ae60; 
+    background: #1F509A; 
     color: white; 
 }
 
 .course.completed:hover {
-    background-color: #2ecc71; 
+    background-color: #3862a1; 
 }
 
 
@@ -120,7 +120,7 @@ section {
 .filter-buttons button {
     padding: 0.5em 1em;
     margin: 0.5em;
-    background-color: #34495e;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
@@ -128,7 +128,7 @@ section {
 }
 
 .filter-buttons button:hover {
-    background-color: #f39c12;
+    background-color: rgb(37, 37, 37);
 }
 
 #courses {
@@ -161,7 +161,7 @@ button {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background: blue;
+    background: #0A3981;
     color: white;
 }
 
