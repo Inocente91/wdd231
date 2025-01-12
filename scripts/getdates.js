@@ -10,6 +10,7 @@ const lastModifiedDate = document.lastModified;
 // Get the last modified date element and set its content
 document.getElementById('lastModifiedDate').textContent = lastModifiedDate;
 
+
 // Course data
 const courses = [
         {
