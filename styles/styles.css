@@ -36,10 +36,43 @@ a {
     text-decoration: none;
 }
 
-main {
-    background: white;
+
+
+h2 {
+    padding: .5rem;
+    background: blue;
+    color: white;
+    text-align: center;
 }
 
-.container-1 {
-    display: flex;
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: wheat;
 }
+
+li {
+    margin: 1rem;
+}
+
+.tijuana {
+    width: 15rem;
+    display: flex;
+    padding: 3.5rem;
+}
+
+section {
+    margin: 3rem;
+    background: white;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+button {
+    background: brown;
+    width: 6.5rem;
+    padding: .5rem;
+    color: white;
+    border-radius: .2rem;
+}
+

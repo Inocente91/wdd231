@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD231 Home Page">
     <meta name="author" content="Inocente Perez">
-    <title>W01 WDD231</title>
+    <title>Inocente Perez WDD231</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,21 +26,27 @@
         </menu>
     </header> 
     <main>
-        <div class="container-1">
+        <section>
             <h2>Course Work</h2>
-            <ul></ul>
-        </div>
-        <div class="container-2">
+            <li></li>
+            <li></li>
+            <li></li>
+        </section>
+        <section>
             <h2>Tijuana, Mexico</h2>
-            <img src="images/inocente.jpg" alt="">
-        </div>
-
-        <div class="bottom-container">
-        <h2>Web and Computer Programming Certificate</h2>
-        </div>
+            <img class="tijuana" src="images/inocente.jpg" alt="">
+        </section>
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <hr>
+            <button>All</button>
+            <button>CSE</button>
+            <button>WDD</button>
+        </section>
     </main>  
     <footer>
-        <p>copyright 2025 Inocente Perez</p>
+        <p>&copy;<span id="copyrightYear"></span> 🌮 Inocente Perez 🌮 Baja California, Mexico.</p>
+        <p>Last Modified: <span id="lastModifiedDate"></span></p>
     </footer> 
 </body>
 </html>
