@@ -92,14 +92,15 @@ const courses = [
     
 ];
 
-
 // Function to display courses
 function displayCourses(category = 'all') {
     const courseContainer = document.getElementById('courses');
+    const totalCreditsElement = document.getElementById('totalCredits'); // Add an element for displaying total credits
     courseContainer.innerHTML = ''; // Clear the existing courses
 
     const filteredCourses = category === 'all' ? courses : courses.filter(course => course.subject === category);
 
+    // Loop through the courses and display them
     filteredCourses.forEach(course => {
         const courseButton = document.createElement('button');
         courseButton.classList.add('course');
@@ -110,10 +111,18 @@ function displayCourses(category = 'all') {
             courseButton.classList.add('completed');
         }
 
+        // Add the credits to the displayed text
         courseButton.innerHTML = `${course.subject} ${course.number}: ${course.title} (Credits: ${course.credits})`;
+
         courseButton.onclick = () => alert(course.description); // Show description on click
         courseContainer.appendChild(courseButton);
     });
+
+    // Calculate the total credits using reduce
+    const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+
+    // Display the total credits
+    totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
 }
 
 // Function to filter courses based on the category
@@ -123,6 +132,7 @@ function filterCourses(category) {
 
 // Initial Load: Display all courses
 displayCourses("all");
+
 
 
   
