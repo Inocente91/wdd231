@@ -11,6 +11,7 @@ const lastModifiedDate = document.lastModified;
 document.getElementById('lastModifiedDate').textContent = lastModifiedDate;
 
 
+
 // Course data
 const courses = [
         {
@@ -133,6 +134,21 @@ function filterCourses(category) {
 
 // Initial Load: Display all courses
 displayCourses("all");
+
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+    const menu = document.querySelector('.menu');
+    const toggleButton = this;
+  
+    // Toggle the 'show' class on the menu
+    menu.classList.toggle('show');
+  
+    // Change the button text based on menu visibility
+    if (menu.classList.contains('show')) {
+      toggleButton.textContent = '✖'; // Show "X" when the menu is open
+    } else {
+      toggleButton.textContent = '☰'; // Show hamburger icon when the menu is closed
+    }
+  });
 
 
 

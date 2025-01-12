@@ -4,9 +4,6 @@
     font-family: "Montserrat", serif;
 }
 
-body {
-    background: white;
-}
 
 .header {
     background: #0A3981;
@@ -15,6 +12,41 @@ body {
     justify-content: center;   
     height: 10rem;
 }
+
+.menu {
+    padding: 1.5rem;
+    background: black;
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .menu a:hover {
+    color: #d6af00; 
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    position: fixed; 
+    top: .2rem; 
+    right: -7rem; 
+    font-size: 24px;
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    z-index: 1000; 
+  }
+  
 
 .header img {
     width: 8rem;
@@ -27,16 +59,7 @@ h1 {
     margin: 2rem;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background: black;
-    padding: 1rem;
-}
 
-nav :hover {
-    color: #f39c12;
-}
 
 a {
     color: white;
@@ -172,6 +195,7 @@ footer {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
+           
     #container {
         margin: 1.5rem;
         grid-template-columns: 1fr; 
@@ -196,6 +220,10 @@ footer {
     p {
         font-size: large;
     }
+
+    h2 {
+        font-size: 1rem;
+    }
  
 
     #courses {
@@ -213,18 +241,50 @@ footer {
 
 @media (max-width: 768px) {
 
-    .header {
-        flex-direction: column; 
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000000;
+        border: none;
+        z-index: 1;
+        text-align: center;
+      }
+    
+      .menu li {
+        margin: 0.7rem 0; 
+      }
+    
+      .menu.show {
+        display: flex;
         height: auto;
+        margin-top: 6rem;
+      }
+    
+      .menu-toggle {
+        display: block;
+        justify-content: center;
+        align-items: center;
+       }
+
+    
+
+    .header {
+        display: flex;
+          height: auto;
+
     }
 
     .header img {
-        width: 5rem;
+        width: 4rem;
         margin: 1rem;
     }
 
     h1 {
-        font-size: 1.5rem; 
+        font-size: 1.2rem; 
     }
 
     h2 {
