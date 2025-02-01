@@ -1,65 +1,74 @@
 {
     "members": [
         {
-            "name": "Tijuana Tech Solutions",
+            "name": "Baristi",
             "address": "123 Tech Street, Tijuana",
             "phone": "(664) 123-4567",
-            "website": "https://tijuanatech.mx",
-            "image": "tech-company.jpg",
+            "website": "https://cafebaristi.com/",
+            "image": "baristi.webp",
             "membershipLevel": 3,
             "since": 2015
         },
         {
-            "name": "Baja Fresh Foods",
+            "name": "OXXO",
             "address": "456 Market Ave, Tijuana",
             "phone": "(664) 234-5678",
-            "website": "https://bajafresh.mx",
-            "image": "food-company.jpg",
+            "website": "https://www.oxxo.com/",
+            "image": "oxxo.webp",
             "membershipLevel": 2,
             "since": 2018
         },
         {
-            "name": "Pacific Logistics",
+            "name": "Caffenio",
             "address": "789 Harbor Way, Tijuana",
             "phone": "(664) 345-6789",
-            "website": "https://pacificlogistics.mx",
-            "image": "logistics-company.jpg",
+            "website": "https://caffenio.com/",
+            "image": "caffenio.webp",
             "membershipLevel": 3,
             "since": 2012
         },
         {
-            "name": "Maya Textiles",
+            "name": "Coppel",
             "address": "321 Artisan Blvd, Tijuana",
             "phone": "(664) 456-7890",
-            "website": "https://mayatextiles.mx",
-            "image": "textile-company.jpg",
+            "website": "https://www.coppel.com/",
+            "image": "coppel.webp",
             "membershipLevel": 1,
             "since": 2020
         },
         {
-            "name": "Border Construction Co.",
+            "name": "Cinepolis",
             "address": "654 Builder's Lane, Tijuana",
             "phone": "(664) 567-8901",
-            "website": "https://borderconstruction.mx",
-            "image": "construction-company.jpg",
+            "website": "https://cinepolis.com/mx",
+            "image": "cinepolis.webp",
             "membershipLevel": 2,
             "since": 2016
         },
         {
-            "name": "Tijuana Medical Center",
+            "name": "Pollo Feliz",
             "address": "987 Health Street, Tijuana",
             "phone": "(664) 678-9012",
-            "website": "https://tijuanamedical.mx",
-            "image": "medical-center.jpg",
+            "website": "https://www.pollofeliz.com/",
+            "image": "pollo.webp",
             "membershipLevel": 3,
             "since": 2008
         },
         {
-            "name": "Baja Adventure Tours",
+            "name": "Enjoy Baja Tours",
             "address": "135 Explorer Road, Tijuana",
             "phone": "(664) 789-0123",
-            "website": "https://bajaadventures.mx",
-            "image": "tour-company.jpg",
+            "website": "https://www.enjoytours.com.mx/",
+            "image": "enjoy.webp",
+            "membershipLevel": 2,
+            "since": 2019
+        },
+        {
+            "name": "Bodega Aurrera",
+            "address": "147 Cincinati Road, Tijuana",
+            "phone": "(664) 659-0783",
+            "website": "https://www.bodegaaurrera.com.mx/inicio",
+            "image": "bodega.webp",
             "membershipLevel": 2,
             "since": 2019
         }
