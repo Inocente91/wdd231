@@ -134,7 +134,7 @@ main {
 }
 
 .hero {
-    background: #0099ff;
+    background: #09122C;
     text-align: center;
     padding: 4rem 2rem;
 }
@@ -222,7 +222,7 @@ h1 {
 .card-btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #0066cc;
+    background-color: #09122C;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -230,7 +230,7 @@ h1 {
 }
 
 .card-btn:hover {
-    background-color: #0052a3;
+    background-color: #132353;
 }
 
 /* View Toggle */
@@ -245,14 +245,14 @@ h1 {
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 5px;
-    background-color: #0099ff;
+    background-color: #09122C;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .toggle-btn.active {
-    background-color: #0066cc;
+    background-color: #132353;
     transform: scale(1.05);
 }
 
