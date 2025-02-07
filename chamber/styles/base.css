@@ -47,12 +47,9 @@ header {
 }
 
 .hero {
-    display: flex;
     position: relative;
     margin: 1rem;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     margin: 0;
 }
 
