@@ -49,11 +49,10 @@ header {
 .hero {
     position: relative;
     margin: 1rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .hero-content {
@@ -234,10 +233,6 @@ picture img {
         gap: 2rem;
     }
 
-    .hero {
-        grid-column: 1 / -1;
-    }
-
     .hamburger {
         display: block;
         position: absolute;
@@ -304,12 +299,6 @@ main {
     flex: 1;
 }
 
-.hero {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
 
 .hero h1 {
     font-size: 5rem;
