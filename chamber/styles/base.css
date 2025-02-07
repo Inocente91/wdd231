@@ -142,7 +142,7 @@ picture img {
 
     .forecast-day {
         display: grid;
-        grid-template-columns: 1fr1;
+        grid-template-columns: 1fr;
         align-items: center;
         padding: 0.5rem;
         background: white;
@@ -153,7 +153,7 @@ picture img {
 
     .weather-card {
         display: grid;
-        grid-template-columns: 1fr1;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
         gap: 1rem;
