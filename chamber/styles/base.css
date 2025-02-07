@@ -60,6 +60,16 @@ header {
     color: white;
 }
 
+.hero-content h2 {}
+
+h2 {
+    text-align: center;
+}
+
+picture img {
+    width: 100%;
+}
+
 /* Weather Card Styles */
 .weather-card {
     display: grid;
