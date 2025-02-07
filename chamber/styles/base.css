@@ -46,91 +46,6 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Main Content Styles */
-main {
-    flex: 1;
-}
-
-.hero {
-    background: #09122C;
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-
-h1 {
-    font-size: 6.5rem;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.hero p {
-    color: white;
-    font-size: 2.5rem;
-}
-
-/* Cards Container */
-.cards-container {
-    padding: 2rem;
-    display: grid;
-    gap: 2rem;
-}
-
-/* Grid View */
-.grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-/* List View */
-.list {
-    grid-template-columns: 1fr;
-}
-
-.list .card {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-}
-
-.list .card-img {
-    width: 200px;
-    height: 150px;
-    border-right: 1px solid #ddd;
-    border-bottom: none;
-}
-
-/* View Toggle */
-.view-toggle {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.toggle-btn {
-    padding: 0.5rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #09122C;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.toggle-btn.active {
-    background-color: #132353;
-    transform: scale(1.05);
-}
-
-/* Footer Styles */
-footer {
-    background: #09122C;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-}
-
 .hero {
     position: relative;
     margin: 1rem;
@@ -145,10 +60,19 @@ footer {
     color: white;
 }
 
-.hero-content h2 {}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 
 h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
 picture img {
@@ -156,26 +80,22 @@ picture img {
 }
 
 /* Weather Card Styles */
-
 .weather-card {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     padding: 1rem;
     background-color: #09122C;
     border-radius: 10px;
     text-align: center;
 }
 
-.weather-card img {
-    width: 120px;
-}
-
 #current-weather {
     background: white;
     border-radius: 10px;
+    padding: 2rem;
 }
 
 .forecast-day {
@@ -187,19 +107,12 @@ picture img {
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-    overflow: hidden;
-}
-
-#forecast h3 {
-    color: white;
 }
 
 .forecast-day img {
     width: 50px;
     height: 50px;
 }
-
-
 
 /* Spotlight Grid */
 .spotlight-grid {
@@ -228,8 +141,8 @@ picture img {
     }
 
     .forecast-day {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr1;
         align-items: center;
         padding: 0.5rem;
         background: white;
@@ -240,24 +153,32 @@ picture img {
 
     .weather-card {
         display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr1;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
         padding: 1rem;
         background-color: #09122C;
         border-radius: 10px;
         text-align: center;
     }
-}
+
+    .cta-button {
+        background-color: white;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        color: black;
+        font-size: .8rem;
+    }
 }
 
 .cta-button {
-    background-color: var(--accent-color);
+    background-color: white;
     padding: 1rem 2rem;
-    border-radius: 5px;
+    border-radius: 2rem;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .current-events,
@@ -354,32 +275,108 @@ picture img {
     .nav-links li {
         margin: 1rem 0;
     }
-
-    .forecast-day {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem;
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 10px;
-    }
-
-    .weather-card {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        background-color: #09122C;
-        border-radius: 10px;
-        text-align: center;
-    }
 }
 
 
+
+nav {
+    flex: 2 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0099ff;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+
+/* Cards Container */
+.cards-container {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Grid View */
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* List View */
+.list {
+    grid-template-columns: 1fr;
+}
+
+.list .card {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.list .card-img {
+    width: 200px;
+    height: 150px;
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+/* View Toggle */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.toggle-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #09122C;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: #132353;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background: #09122C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -394,12 +391,23 @@ picture img {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: .5rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-top: 20rem;
+    }
+
+    .hero {
+        background: #09122C;
+        height: 100vh;
+        font-size: .5rem;
     }
 
     .hero p {
-        color: white;
-        font-size: 1rem;
+        font-size: .8rem;
+        margin-bottom: 2rem;
     }
 
     .card {
@@ -408,35 +416,5 @@ picture img {
 
     .list .card {
         flex-direction: column;
-    }
-
-    .list .card-img {
-        width: 100%;
-        height: 200px;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .weather-card {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        background-color: #09122C;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .forecast-day {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem;
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        margin-bottom: 10px;
     }
 }
