@@ -1,0 +1,63 @@
+<!-- discover.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Include your existing head content (meta, title, stylesheets) -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <!-- Existing header content -->
+    </header>
+    <nav>
+        <!-- Navigation menu -->
+    </nav>
+    <main>
+        <div id="visit-message" class="visit-message"></div>
+
+        <div class="discover-grid">
+            <!-- Card 1 -->
+            <div class="card card1">
+                <h2>Historic Museum</h2>
+                <figure>
+                    <img src="images/museum.webp" alt="Historic Museum" loading="lazy">
+                </figure>
+                <address>123 History Lane</address>
+                <p>Explore our rich local history through interactive exhibits.</p>
+                <button>Learn More</button>
+            </div>
+            <!-- Repeat similar card structure for remaining 7 items -->
+        </div>
+    </main>
+    <footer>
+        <!-- Existing footer content -->
+    </footer>
+
+    <script>
+        // Visit message functionality
+        const visitMessage = document.getElementById('visit-message');
+        const lastVisit = localStorage.getItem('lastVisit');
+        const currentDate = Date.now();
+        const oneDay = 86400000; // milliseconds in a day
+
+        if (!lastVisit) {
+            visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const daysSince = Math.floor((currentDate - lastVisit) / oneDay);
+
+            if (daysSince < 1) {
+                visitMessage.textContent = "Back so soon! Awesome!";
+            } else {
+                visitMessage.textContent = `You last visited ${daysSince} day${daysSince !== 1 ? 's' : ''} ago.`;
+            }
+        }
+
+        localStorage.setItem('lastVisit', currentDate);
+    </script>
+</body>
+
+</html>

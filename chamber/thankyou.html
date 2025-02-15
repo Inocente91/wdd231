@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce Landing/Home Page">
     <meta name="author" content="Inocente Perez">
-    <meta property="og:title" content="Chamber of Tijuana Home">
+    <meta property="og:title" content="Chamber of Tijuana Thank You">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://inocente91.github.io/chamber/images/tijuana.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://inocente91.github.io/wdd231/chamber/index.html">
-    <title>Chamber of Commerce Landing/Home Page</title>
+    <title>Chamber of Commerce Landing/Thank You Page</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -45,45 +44,15 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <picture>
-                <img src="images/tijuana.webp" alt="View of Tijuana City">
-            </picture>
-            <div class="hero-content">
-                <h1>Welcome</h1>
-                <h2>Chamber of Commerce of Tijuana</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dicta saepe sed voluptate dolorem
-                    numquam dolor possimus animi repudiandae sit, laborum illum, ducimus ut ipsa quis itaque at.
-                    Molestiae, tempore!</p>
-                <a href="join.html" class="cta-button">Join the Chamber</a>
-            </div>
-        </section>
-
-        <section class="current-events">
-            <h2>Current Events</h2>
-            <div class="events-grid">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quo dolor nemo quod hic iure
-                    perferendis impedit, laudantium cupiditate, voluptatem iste nobis quisquam labore beatae tempora
-                    iusto incidunt, exercitationem cum.</p>
-            </div>
-        </section>
-
-        <section class="weather">
-            <h2>Weather Forecast</h2>
-            <div class="weather-card">
-                <div id="current-weather"></div>
-                <div id="forecast"></div>
-            </div>
-        </section>
-
-
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div class="spotlight-grid">
-                <!-- Spotlights will be dynamically added -->
-            </div>
-        </section>
+    <main class="confirmation">
+        <h1>Thank You for Joining!</h1>
+        <div class="confirmation-details">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Business:</strong> <span id="business"></span></p>
+            <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="copyrightYear"></span> Chamber of Commerce. Created by Inocente Perez, WDD231</p>

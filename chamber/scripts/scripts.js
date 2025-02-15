@@ -52,7 +52,7 @@ async function fetchMembers() {
         const response = await fetch('data/members.json');
         const data = await response.json();
         const membersContainer = document.getElementById('membersContainer');
-        
+
         // Clear existing content
         membersContainer.innerHTML = '';
 

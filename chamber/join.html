@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Landing/Home Page">
+    <meta name="author" content="Inocente Perez">
+    <meta property="og:title" content="Chamber of Tijuana Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://inocente91.github.io/chamber/images/tijuana.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://inocente91.github.io/wdd231/chamber/index.html">
+    <title>Chamber of Commerce Landing/Join Page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/join.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Chamber of Tijuana">
+        </div>
+        <nav class="main-nav">
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h1>Join the Chamber</h1>
+            <form method="get" action="thankyou.html" id="joinForm">
+                <label>
+                    First Name:
+                    <input type="text" name="firstName" required autocomplete="given-name"
+                        title="Enter your first name">
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name">
+                </label>
+
+                <label>
+                    Organization Title:
+                    <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}"
+                        title="Enter your organization title (letters, hyphens, spaces only)">
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com"
+                        title="Enter your email address">
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                </label>
+
+                <label>
+                    Business Name:
+                    <input type="text" name="business" required autocomplete="organization"
+                        title="Enter your business name">
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" required title="Select membership level">
+                        <option value="np">NP Membership (Non Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Enter business description"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+
+        <div class="membership-cards">
+            <!-- NP Membership -->
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#np-modal" class="modal-link">View Benefits</a>
+                <dialog id="np-modal">
+                    <h4>NP Membership Benefits</h4>
+                    <ul>
+                        <li>No membership fee</li>
+                        <li>Basic directory listing</li>
+                        <li>Access to member resources</li>
+                    </ul>
+                    <button class="close-modal">Close</button>
+                </dialog>
+            </div>
+
+            <!-- Bronze Membership -->
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <a href="#bronze-modal" class="modal-link">View Benefits</a>
+                <dialog id="bronze-modal">
+                    <h4>Bronze Membership Benefits</h4>
+                    <ul>
+                        <li>Annual Fee: $200</li>
+                        <li>Enhanced directory listing</li>
+                        <li>Event discounts</li>
+                    </ul>
+                    <button class="close-modal">Close</button>
+                </dialog>
+            </div>
+
+            <!-- Silver Membership -->
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <a href="#silver-modal" class="modal-link">View Benefits</a>
+                <dialog id="silver-modal">
+                    <h4>Silver Membership Benefits</h4>
+                    <ul>
+                        <li>Annual Fee: $400</li>
+                        <li>Training sessions</li>
+                        <li>Advertising spots</li>
+                    </ul>
+                    <button class="close-modal">Close</button>
+                </dialog>
+            </div>
+
+            <!-- Gold Membership -->
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <a href="#gold-modal" class="modal-link">View Benefits</a>
+                <dialog id="gold-modal">
+                    <h4>Gold Membership Benefits</h4>
+                    <ul>
+                        <li>Annual Fee: $600</li>
+                        <li>Priority event access</li>
+                        <li>Home page spotlight</li>
+                    </ul>
+                    <button class="close-modal">Close</button>
+                </dialog>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyrightYear"></span> Chamber of Commerce. Created by Inocente Perez, WDD231</p>
+        <p>Last Modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+</body>
+
+</html>
