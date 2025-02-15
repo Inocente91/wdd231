@@ -1,62 +1,186 @@
-<!-- discover.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Include your existing head content (meta, title, stylesheets) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Landing/Discover Page">
+    <meta name="author" content="Inocente Perez">
+    <meta property="og:title" content="Chamber of Tijuana Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://inocente91.github.io/chamber/images/tijuana.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://inocente91.github.io/wdd231/chamber/discover.html">
+    <title>Chamber of Commerce Landing/Discover Page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/discover.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <!-- Existing header content -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Chamber of Tijuana">
+        </div>
+        <nav class="main-nav">
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <!-- Navigation menu -->
-    </nav>
     <main>
         <div id="visit-message" class="visit-message"></div>
 
         <div class="discover-grid">
-            <!-- Card 1 -->
+
             <div class="card card1">
-                <h2>Historic Museum</h2>
+                <h2>Wax Museum</h2>
                 <figure>
-                    <img src="images/museum.webp" alt="Historic Museum" loading="lazy">
+                    <img src="images/wax-meseum.webp" alt="Wax Museum" loading="lazy">
                 </figure>
-                <address>123 History Lane</address>
-                <p>Explore our rich local history through interactive exhibits.</p>
+                <address>Primera núm. 8281
+                    Centro
+                    CP 22000
+                    Tijuana, Tijuana, Baja California</address>
+                <p>Inaugurated in 1993, the Tijuana Wax Museum is considered the second of its kind in all of Latin
+                    America, featuring more than 80 replicas of historical figures, artists, and legends from film and
+                    television.</p>
                 <button>Learn More</button>
             </div>
-            <!-- Repeat similar card structure for remaining 7 items -->
-        </div>
+
+            <div class="card card2">
+                <h2>Interactive Museum El Trompo</h2>
+                <figure>
+                    <img src="images/eltrompo.webp" alt="Interactive Museum" loading="lazy">
+                </figure>
+                <address>Libramiento Los Insurgentes s/n
+                    Zona Río Tijuana, Tercera Etapa
+                    CP 22226
+                    Tijuana, Tijuana, Baja California</address>
+                <p>An educational space where, through experimentation, young visitors learn to incorporate scientific
+                    concepts into their daily lives and gain a better understanding of the world they live in. They find
+                    answers to their curiosity, interests, and needs while fostering development and comprehensive
+                    learning.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card card3">
+                <h2>Mexican Wrestling Museum</h2>
+                <figure>
+                    <img src="images/66476.webp" alt="Mexican Wrestling Museum" loading="lazy">
+                </figure>
+                <address>Hermenegildo Galeana 8186
+                    Centro
+                    CP 22000
+                    Tijuana, Tijuana, Baja California</address>
+                <p>Inaugurated in 1993, the Tijuana Wax Museum is considered the second of its kind in all of Latin
+                    America, featuring more than 80 replicas of historical figures, artists, and legends from film and
+                    television.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card card4">
+                <h2>Municipal Auditorium</h2>
+                <figure>
+                    <img src="images/municipal.webp" alt="Municipal Auditorium" loading="lazy">
+                </figure>
+                <address>Blvd. Gustavo Díaz Ordaz s/n
+                    Fracc. El Paraíso
+                    CP 22220, Tijuana, Baja California</address>
+                <p>The Auditorio Municipal Fausto Gutiérrez Moreno, commonly known as the Tijuana Municipal Auditorium,
+                    is a prominent indoor venue located in Tijuana, Baja California, Mexico. Established in 1969, it has
+                    a seating capacity of approximately 4,500 and serves as a hub for various events, including
+                    concerts, sports, and cultural performances. </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card card5">
+                <h2>CECUT</h2>
+                <figure>
+                    <img src="images/cecut.webp" alt="CECUT, Cultural Center" loading="lazy">
+                </figure>
+                <address>Blvd. Gustavo Díaz Ordaz s/n
+                    Fracc. El Paraíso
+                    CP 22220, Tijuana, Baja California</address>
+                <p>The CECUT is a cultural center in Mexico,
+                    located near the border, founded on October 20, 1982.
+                    It is the institution that offers the most extensive
+                    and diverse cultural programming in the northwest region
+                    and the only infrastructure of the Ministry of Culture—formerly the National Council
+                    for Culture and the Arts—outside the country’s capital. It is committed to meeting the artistic
+                    and cultural needs of the population through programs that include various artistic expressions
+                    and topics related to both traditional and contemporary culture.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card card6">
+                <h2>Hidalgo Market</h2>
+                <figure>
+                    <img src="images/mercado-hidalgo.webp" alt="Mercado Hidalgo" loading="lazy">
+                </figure>
+                <address>Blvd. Gustavo Díaz Ordaz s/n
+                    Fracc. El Paraíso
+                    CP 22220, Tijuana, Baja California</address>
+                <p>The CECUT is a cultural center in Mexico,
+                    located near the border, founded on October 20, 1982.
+                    It is the institution that offers the most extensive
+                    and diverse cultural programming in the northwest region
+                    and the only infrastructure of the Ministry of Culture—formerly the National Council
+                    for Culture and the Arts—outside the country’s capital. It is committed to meeting the artistic
+                    and cultural needs of the population through programs that include various artistic expressions
+                    and topics related to both traditional and contemporary culture.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card card7">
+                <h2>Rosarito Beach</h2>
+                <figure>
+                    <img src="images/rosarito.webp" alt="Rosarito Beach" loading="lazy">
+                </figure>
+                <address>Blvd. Benito Juárez 31, Centro, 22710 Rosarito, B.C., Mexico</address>
+                <p>Rosarito Beach, located approximately 40 minutes south of the U.S.-Mexico border, is a popular
+                    coastal destination in Baja California, Mexico. Known for its beautiful sandy shores, vibrant
+                    nightlife, and rich cultural heritage, it attracts both locals and tourists seeking a beach getaway.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card card8">
+                <h2>Malecon Tijuana</h2>
+                <figure>
+                    <img src="images/malecon.webp" alt="Malecon Tijuana" loading="lazy">
+                </figure>
+                <address>Av. del Pacífico s/n, Playas de Tijuana, 22504 Tijuana, B.C., Mexico. </address>
+                <p>The Malecón de Playas de Tijuana is a scenic boardwalk located in the Playas de Tijuana neighborhood,
+                    offering stunning ocean views and a variety of attractions.
+                </p>
+                <button>Learn More</button>
+
+            </div>
     </main>
     <footer>
-        <!-- Existing footer content -->
+        <p>&copy;<span id="copyrightYear"></span> Chamber of Commerce. Created by Inocente Perez, WDD231</p>
+        <p>Last Modified: <span id="lastModifiedDate"></span></p>
     </footer>
 
     <script>
-        // Visit message functionality
-        const visitMessage = document.getElementById('visit-message');
-        const lastVisit = localStorage.getItem('lastVisit');
-        const currentDate = Date.now();
-        const oneDay = 86400000; // milliseconds in a day
 
-        if (!lastVisit) {
-            visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-        } else {
-            const daysSince = Math.floor((currentDate - lastVisit) / oneDay);
-
-            if (daysSince < 1) {
-                visitMessage.textContent = "Back so soon! Awesome!";
-            } else {
-                visitMessage.textContent = `You last visited ${daysSince} day${daysSince !== 1 ? 's' : ''} ago.`;
-            }
-        }
-
-        localStorage.setItem('lastVisit', currentDate);
     </script>
 </body>
 

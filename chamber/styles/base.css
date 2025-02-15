@@ -144,6 +144,38 @@ h2 {
     padding: 2rem;
 }
 
+.visit-message {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card1 {
+    text-align: center;
+}
+
+.card img {
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.card button {
+    background: #09122C;
+    color: white;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
 @media (max-width: 768px) {
 
     .spotlight-grid {
@@ -181,6 +213,18 @@ h2 {
         color: black;
         font-size: .8rem;
     }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 .cta-button {
@@ -281,6 +325,18 @@ h2 {
     .nav-links li {
         margin: 1rem 0;
     }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
 }
 
 
@@ -418,6 +474,7 @@ footer {
     .list .card {
         flex-direction: column;
     }
+
 }
 
 .container {
@@ -439,6 +496,7 @@ footer {
     .membership-cards {
         flex: 1;
     }
+
 }
 
 form {
