@@ -4,110 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming & Esports in Tijuana - Site Plan</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0F3460;
-            color: #FFFFFF;
-            margin: 0;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #1A1A2E;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Oswald', sans-serif;
-            color: #E94560;
-        }
-
-        section {
-            background: #1A1A2E;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            padding: 5px 0;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
+    <meta name="description" content="Gaming Baja - Your Gaming Hub in Tijuana">
+    <meta property="og:title" content="Gaming Baja - Your Gaming Hub in Tijuana">
+    <meta property="og:description"
+        content="Join Gaming Baja for the latest gaming events, streams, and news in Tijuana.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://your-github-pages-url.com">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="author" content="Inocente Perez">
+    <title>Gaming Baja</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/events.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Gaming & Esports in Tijuana - Site Plan</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Gaming Baja" width="100">
+        </div>
+        <nav class="main-nav">
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="youtube.html">Youtube Channels</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section>
-        <h2>Site Name</h2>
-        <p><strong>Gaming & Esports in Tijuana</strong></p>
-        <p>This name represents a website dedicated to the gaming and esports community in Tijuana, providing
-            information about tournaments, teams, gaming venues, and content creators.</p>
-        <p>Optional domain availability: <em>gamingtijuana.com</em></p>
-    </section>
-
-    <section>
-        <h2>Site Purpose</h2>
-        <p>The website serves as a central hub for Tijuana’s gaming community. It provides information on local gaming
-            tournaments, esports teams, gaming cafes, and streaming content. It also features a community forum for
-            gamers to connect and discuss gaming-related topics.</p>
-    </section>
-
-    <section>
-        <h2>Scenarios</h2>
-        <ul>
-            <li>Where can I find upcoming gaming tournaments in Tijuana?</li>
-            <li>How can I join a local esports team?</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Color Schema</h2>
-        <ul>
-            <li><strong>#1A1A2E (Dark Blue):</strong> Used for headers and navigation.</li>
-            <li><strong>#E94560 (Bright Red):</strong> Used for accents, buttons, and important highlights.</li>
-            <li><strong>#0F3460 (Deep Blue):</strong> Background color for sections.</li>
-            <li><strong>#FFFFFF (White):</strong> Main text color for readability.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Typography</h2>
-        <ul>
-            <li><strong>Oswald (Headings):</strong> Used for titles and section headers.</li>
-            <li><strong>Roboto (Body Text):</strong> Used for general content and paragraphs.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Wireframe</h2>
-        <p>Below are wireframe sketches for the home page layout:</p>
-        <h3>Mobile View</h3>
-        <img src="images/mobile-view.jpg" alt="Wireframe of mobile layout">
-        <h3>Desktop View</h3>
-        <img src="images/computer-view.jpg" Wireframe of desktop layout">
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Gaming Baja</h1>
+                <p>Your Gamer adventure begins here. Explore our events.</p>
+                <a href="#cta" class="btn">Get Started</a>
+            </div>
+        </section>
+        <section>
+            <h2>YouTube Channels</h2>
+            <div class="youtube-channels">
+                <!-- YouTube Channel Card 1 -->
+                <div class="card">
+                    <img src="images/logo.png" alt="Channel 1" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Gaming Channel 1</h3>
+                        <p class="card-description">Join Gaming Channel 1 for the latest streams and events!</p>
+                        <a href="https://www.youtube.com/channel/CHANNEL_ID_1" class="btn" target="_blank">Visit
+                            Channel</a>
+                    </div>
+                </div>
+                <!-- YouTube Channel Card 2 -->
+                <div class="card">
+                    <img src="images/logo.png" alt="Channel 2" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Gaming Channel 2</h3>
+                        <p class="card-description">Catch all the gaming action on Gaming Channel 2!</p>
+                        <a href="https://www.youtube.com/channel/CHANNEL_ID_2" class="btn" target="_blank">Visit
+                            Channel</a>
+                    </div>
+                </div>
+                <!-- YouTube Channel Card 3 -->
+                <div class="card">
+                    <img src="images/logo.png" alt="Channel 3" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Gaming Channel 3</h3>
+                        <p class="card-description">Get your game on with Gaming Channel 3!</p>
+                        <a href="https://www.youtube.com/channel/CHANNEL_ID_3" class="btn" target="_blank">Visit
+                            Channel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <section>
+                <h2>Featured Video</h2>
+                <div class="featured-video">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Featured Video"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            </div>
+        </section>
+        <section>
+            <h2>Upcoming Events</h2>
+            <label>
+                <input type="checkbox" id="filter-upcoming"> Show only upcoming events
+            </label>
+            <div class="events-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="copyrightYear"></span> Gaming Baja. Created by Inocente Perez, WDD231</p>
+        <p>Last Modified: <span id="lastModifiedDate"></span></p>
+    </footer>
 </body>
 
 </html>
