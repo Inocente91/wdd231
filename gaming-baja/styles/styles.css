@@ -388,17 +388,6 @@ h2 {
     overflow: hidden;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .contact-form,
-    .contact-info {
-        width: 100%;
-    }
-}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -460,5 +449,14 @@ h2 {
         width: 90%;
         /* Make cards take up more width on smaller screens */
         margin-bottom: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
     }
 }
